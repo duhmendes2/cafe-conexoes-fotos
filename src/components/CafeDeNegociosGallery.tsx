@@ -81,114 +81,115 @@ const CafeDeNegociosGallery = () => {
         </div>
       </header>
 
-      {/* Company Presentation Section */}
-      <section className="py-20 bg-gradient-to-br from-coffee-900 to-coffee-800 text-white relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-rose-400"></div>
-          <div className="absolute bottom-20 right-10 w-24 h-24 rounded-full bg-coffee-400"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 rounded-full bg-rose-300"></div>
+      {/* Personal Photography Presentation Section */}
+      <section className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white relative overflow-hidden">
+        {/* Artistic Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.02\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"1\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+          <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-gradient-to-br from-rose-500/10 to-transparent blur-3xl"></div>
+          <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-gradient-to-br from-amber-500/10 to-transparent blur-3xl"></div>
         </div>
 
         <div className="container mx-auto px-6 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left Content */}
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h3 className="text-sm font-semibold text-rose-300 uppercase tracking-wider">
-                  Fotografia Profissional
-                </h3>
-                <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-                  Capturando momentos que
-                  <span className="block text-transparent bg-gradient-to-r from-rose-400 to-rose-300 bg-clip-text">
-                    transformam vidas
-                  </span>
-                </h2>
-              </div>
-
-              <p className="text-lg text-coffee-100 leading-relaxed">
-                Com mais de uma década de experiência em fotografia profissional, nossa missão é eternizar os momentos mais importantes da sua jornada empreendedora. Especializados em eventos corporativos, retratos executivos e documentação de projetos que fazem a diferença.
-              </p>
-
-              <div className="space-y-4">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-rose-500/20 flex items-center justify-center">
-                    <Camera className="w-6 h-6 text-rose-300" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Fotografia de Eventos</h4>
-                    <p className="text-coffee-200 text-sm">Documentamos cada detalhe dos seus encontros e celebrações</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-rose-500/20 flex items-center justify-center">
-                    <Users className="w-6 h-6 text-rose-300" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Retratos Corporativos</h4>
-                    <p className="text-coffee-200 text-sm">Valorizamos a essência e força de cada empreendedora</p>
-                  </div>
-                </div>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-rose-500/20 flex items-center justify-center">
-                    <Award className="w-6 h-6 text-rose-300" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-white">Qualidade Premium</h4>
-                    <p className="text-coffee-200 text-sm">Entrega de alta resolução e edição profissional</p>
-                  </div>
-                </div>
-              </div>
-
-              <Button 
-                size="lg"
-                className="bg-gradient-to-r from-rose-500 to-rose-400 hover:from-rose-600 hover:to-rose-500 text-white border-0 px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-                onClick={() => window.open('https://duhmendes.com.br', '_blank')}
-              >
-                <Camera className="w-5 h-5 mr-2" />
-                Conheça nosso portfólio
-              </Button>
+          <div className="max-w-7xl mx-auto">
+            {/* Author Tag */}
+            <div className="mb-8 text-center">
+              <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md rounded-full text-sm font-medium text-rose-300 border border-white/20">
+                Fotografado por Eduardo Mendes
+              </span>
             </div>
 
-            {/* Right Content - Stats/Info Cards */}
-            <div className="grid grid-cols-1 gap-6">
-              <Card className="p-8 bg-white/10 backdrop-blur-lg border-white/20 text-white">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-400 to-rose-500 mx-auto flex items-center justify-center">
-                    <span className="text-2xl font-bold">10+</span>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+              {/* Left Content - Personal Photo */}
+              <div className="relative order-2 lg:order-1">
+                <div className="relative">
+                  {/* Main photo with artistic frame */}
+                  <div className="relative group">
+                    <div className="absolute inset-0 bg-gradient-to-br from-rose-400/20 to-amber-400/20 rounded-2xl blur-xl transform rotate-3 scale-105"></div>
+                    <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-3 rounded-2xl shadow-2xl">
+                      <img
+                        src="https://duhmendes.com.br/uploaduh/20250609_aniversariofatima/DSC_7142_semlogo.jpg"
+                        alt="Eduardo Mendes - Fotógrafo"
+                        className="w-full h-[500px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
+                      />
+                      {/* Overlay gradient */}
+                      <div className="absolute inset-3 rounded-xl bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-semibold">Anos de Experiência</h4>
-                    <p className="text-coffee-200">Uma década capturando momentos únicos</p>
+                  
+                  {/* Floating camera icon */}
+                  <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-rose-500 to-rose-600 rounded-full flex items-center justify-center shadow-xl animate-float">
+                    <Camera className="w-8 h-8 text-white" />
                   </div>
                 </div>
-              </Card>
+              </div>
 
-              <Card className="p-8 bg-white/10 backdrop-blur-lg border-white/20 text-white">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-coffee-400 to-coffee-500 mx-auto flex items-center justify-center">
-                    <span className="text-2xl font-bold">500+</span>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold">Eventos Fotografados</h4>
-                    <p className="text-coffee-200">Histórias preservadas com excelência</p>
-                  </div>
+              {/* Right Content - Personal Message */}
+              <div className="space-y-8 order-1 lg:order-2">
+                <div className="space-y-6">
+                  <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+                    Olá, eu sou o
+                    <span className="block text-transparent bg-gradient-to-r from-rose-400 via-rose-300 to-amber-300 bg-clip-text">
+                      Eduardo Mendes
+                    </span>
+                  </h2>
+                  
+                  <div className="w-20 h-1 bg-gradient-to-r from-rose-400 to-amber-400 rounded-full"></div>
+                  
+                  <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light">
+                    Fotografo profissional há mais de uma década. Especializo-me em capturar a essência única de cada momento, transformando instantes em memórias eternas através da minha lente.
+                  </p>
                 </div>
-              </Card>
 
-              <Card className="p-8 bg-white/10 backdrop-blur-lg border-white/20 text-white">
-                <div className="text-center space-y-4">
-                  <div className="w-16 h-16 rounded-full bg-gradient-to-br from-rose-400 to-coffee-400 mx-auto flex items-center justify-center">
-                    <span className="text-2xl font-bold">★★★★★</span>
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold">Avaliação dos Clientes</h4>
-                    <p className="text-coffee-200">Satisfação garantida em cada projeto</p>
+                <div className="space-y-6">
+                  <p className="text-lg text-slate-400 leading-relaxed">
+                    Meu trabalho vai além de simplesmente tirar fotos. Acredito que cada clique deve contar uma história, revelar uma emoção e preservar a autenticidade do momento. Seja documentando eventos corporativos importantes ou criando retratos que capturam a verdadeira personalidade de cada pessoa.
+                  </p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-10 h-10 bg-gradient-to-br from-rose-500/20 to-rose-600/20 rounded-lg flex items-center justify-center">
+                          <Award className="w-5 h-5 text-rose-400" />
+                        </div>
+                        <span className="font-semibold text-white">+10 anos</span>
+                      </div>
+                      <p className="text-slate-400 text-sm">De experiência capturando momentos únicos</p>
+                    </div>
+                    
+                    <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6">
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-10 h-10 bg-gradient-to-br from-amber-500/20 to-amber-600/20 rounded-lg flex items-center justify-center">
+                          <Users className="w-5 h-5 text-amber-400" />
+                        </div>
+                        <span className="font-semibold text-white">500+ eventos</span>
+                      </div>
+                      <p className="text-slate-400 text-sm">Fotografados com excelência e dedicação</p>
+                    </div>
                   </div>
                 </div>
-              </Card>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button 
+                    size="lg"
+                    className="bg-gradient-to-r from-rose-500 to-rose-600 hover:from-rose-600 hover:to-rose-700 text-white border-0 px-8 py-6 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                    onClick={() => window.open('https://duhmendes.com.br', '_blank')}
+                  >
+                    <Camera className="w-5 h-5 mr-2" />
+                    Conheça meu portfólio
+                  </Button>
+                  
+                  <Button 
+                    size="lg"
+                    variant="outline"
+                    className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold backdrop-blur-md"
+                    onClick={() => window.open('https://www.instagram.com/eduardomendesfoto/', '_blank')}
+                  >
+                    <Instagram className="w-5 h-5 mr-2" />
+                    Me siga no Instagram
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
