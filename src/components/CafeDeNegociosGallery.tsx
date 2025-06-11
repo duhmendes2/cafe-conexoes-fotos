@@ -104,14 +104,14 @@ const CafeDeNegociosGallery = () => {
               {/* Left Content - Personal Photo */}
               <div className="relative order-2 lg:order-1">
                 <div className="relative">
-                  {/* Main photo with artistic frame */}
+                  {/* Main photo with artistic frame - UPDATED: object-top for top alignment */}
                   <div className="relative group">
                     <div className="absolute inset-0 bg-gradient-to-br from-rose-400/20 to-amber-400/20 rounded-2xl blur-xl transform rotate-3 scale-105"></div>
                     <div className="relative bg-gradient-to-br from-slate-800 to-slate-900 p-3 rounded-2xl shadow-2xl">
                       <img
                         src="https://duhmendes.com.br/uploaduh/20250609_aniversariofatima/DSC_7142_semlogo.jpg"
                         alt="Eduardo Mendes - Fotógrafo"
-                        className="w-full h-[500px] object-cover rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
+                        className="w-full h-[500px] object-cover object-top object-center rounded-xl transition-transform duration-500 group-hover:scale-[1.02]"
                       />
                       {/* Overlay gradient */}
                       <div className="absolute inset-3 rounded-xl bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -215,12 +215,15 @@ const CafeDeNegociosGallery = () => {
               É com grande satisfação que eu, Eduardo Mendes, entrego esta coleção de imagens que capturei durante nosso encontro. Cada fotografia foi selecionada com cuidado para preservar a essência deste momento especial.
             </p>
             
+            {/* Added divider before the signature */}
+            <div className="w-24 h-1 bg-gradient-to-r from-rose-400 to-amber-400 rounded-full mx-auto my-4"></div>
+            
             <div className="flex items-center justify-center gap-4">
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-rose-500 shadow-lg flex items-center justify-center">
                 <Camera className="w-6 h-6 text-white" />
               </div>
               <p className="text-lg font-medium text-coffee-800">
-                Duh Mendes Photography
+                Duh Mendes
               </p>
             </div>
           </div>
@@ -259,19 +262,19 @@ const CafeDeNegociosGallery = () => {
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
-                  {/* Actions */}
+                  {/* Actions - IMPROVED BUTTON READABILITY */}
                   <div className="absolute bottom-4 left-4 right-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 opacity-0 group-hover:opacity-100 flex gap-2">
                     <Button
                       variant="secondary"
                       size="sm"
                       onClick={() => toggleLike(index)}
-                      className={`flex-1 bg-white/20 backdrop-blur-md text-white border-white/30 hover:bg-white/30 ${
-                        likes[index] ? 'bg-rose-500/40' : ''
+                      className={`flex-1 bg-white/30 backdrop-blur-md text-white border-white/30 hover:bg-white/50 ${
+                        likes[index] ? 'bg-rose-500/60 hover:bg-rose-500/70' : ''
                       }`}
                     >
                       <Heart 
                         className={`w-4 h-4 mr-1 ${
-                          likes[index] ? 'fill-current text-rose-400' : ''
+                          likes[index] ? 'fill-current text-rose-200' : ''
                         }`} 
                       />
                       {likes[index] ? 'Curtido' : 'Curtir'}
@@ -281,7 +284,7 @@ const CafeDeNegociosGallery = () => {
                       variant="secondary"
                       size="sm"
                       onClick={() => downloadImage(photo, index)}
-                      className="flex-1 bg-white/20 backdrop-blur-md text-white border-white/30 hover:bg-white/30"
+                      className="flex-1 bg-white/30 backdrop-blur-md text-white border-white/30 hover:bg-white/50"
                     >
                       <Download className="w-4 h-4 mr-1" />
                       Download
@@ -353,7 +356,7 @@ const CafeDeNegociosGallery = () => {
                     variant="outline" 
                     size="sm"
                     onClick={() => window.open('https://www.instagram.com/cafedenegociosmm/', '_blank')}
-                    className="w-full border-white/30 text-white hover:bg-white/10"
+                    className="w-full border-white/30 text-white hover:bg-white/20"
                   >
                     <Instagram className="w-4 h-4 mr-1" />
                     Seguir
@@ -373,7 +376,7 @@ const CafeDeNegociosGallery = () => {
                     variant="outline" 
                     size="sm"
                     onClick={() => window.open('https://www.instagram.com/mr.consultoriaedesenvolvimento/', '_blank')}
-                    className="w-full border-white/30 text-white hover:bg-white/10"
+                    className="w-full border-white/30 text-white hover:bg-white/20"
                   >
                     <Instagram className="w-4 h-4 mr-1" />
                     Seguir
@@ -393,7 +396,7 @@ const CafeDeNegociosGallery = () => {
                     variant="outline" 
                     size="sm"
                     onClick={() => window.open('https://www.instagram.com/dra.maiaradumedeiros/', '_blank')}
-                    className="w-full border-white/30 text-white hover:bg-white/10"
+                    className="w-full border-white/30 text-white hover:bg-white/20"
                   >
                     <Instagram className="w-4 h-4 mr-1" />
                     Seguir
