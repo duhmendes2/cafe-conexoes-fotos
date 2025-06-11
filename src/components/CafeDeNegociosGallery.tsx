@@ -180,15 +180,16 @@ const CafeDeNegociosGallery = () => {
                     Conheça meu portfólio
                   </Button>
                   
-                  <Button 
-                    size="lg"
-                    variant="outline"
-                    className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg font-semibold backdrop-blur-md"
-                    onClick={() => window.open('https://www.instagram.com/eduardomendesfoto/', '_blank')}
-                  >
-                    <Instagram className="w-5 h-5 mr-2" />
-                    Me siga no Instagram
-                  </Button>
+<Button 
+  size="lg"
+  variant="default"
+  className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-6 text-lg font-semibold rounded-md shadow transition-all"
+  onClick={() => window.open('https://www.instagram.com/duhmendes/', '_blank')}
+>
+  <Instagram className="w-5 h-5 mr-2" />
+  Me siga no Instagram
+</Button>
+
                 </div>
               </div>
             </div>
