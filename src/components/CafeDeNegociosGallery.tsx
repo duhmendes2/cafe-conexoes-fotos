@@ -62,11 +62,11 @@ const CafeDeNegociosGallery = () => {
               <div className="w-16 h-16 rounded-full coffee-gradient flex items-center justify-center shadow-lg">
                 <Coffee className="w-8 h-8 text-white" />
               </div>
-              <h1 className="text-4xl font-bold text-coffee-800">Café de Negócios</h1>
+              <h1 className="text-4xl font-bold text-coffee-800 font-sans">Café de Negócios</h1>
             </div>
 
             {/* Main Title */}
-            <h2 className="text-5xl md:text-7xl font-bold text-coffee-900 leading-tight max-w-4xl mx-auto">
+            <h2 className="text-5xl md:text-7xl font-bold text-coffee-900 leading-tight max-w-4xl mx-auto font-sans">
               Onde conexões se encontram
               <span className="block text-transparent bg-gradient-to-r from-coffee-600 to-rose-600 bg-clip-text">
                 com propósito
@@ -127,7 +127,7 @@ const CafeDeNegociosGallery = () => {
               {/* Right Content - Personal Message */}
               <div className="space-y-8 order-1 lg:order-2">
                 <div className="space-y-6">
-                  <h2 className="text-5xl md:text-6xl font-bold leading-tight">
+                  <h2 className="text-5xl md:text-6xl font-bold leading-tight font-sans">
                     Olá, eu sou o
                     <span className="block text-transparent bg-gradient-to-r from-rose-400 via-rose-300 to-amber-300 bg-clip-text">
                       Eduardo Mendes
@@ -137,13 +137,13 @@ const CafeDeNegociosGallery = () => {
                   <div className="w-20 h-1 bg-gradient-to-r from-rose-400 to-amber-400 rounded-full"></div>
                   
                   <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-light">
-                    Fotografo profissional há mais de uma década. Especializo-me em capturar a essência única de cada momento, transformando instantes em memórias eternas através da minha lente.
+                    É com muito prazer que entrego estas fotografias especiais do evento Café de Negócios. Capturei momentos autênticos que representam a essência deste encontro transformador.
                   </p>
                 </div>
 
                 <div className="space-y-6">
                   <p className="text-lg text-slate-400 leading-relaxed">
-                    Meu trabalho vai além de simplesmente tirar fotos. Acredito que cada clique deve contar uma história, revelar uma emoção e preservar a autenticidade do momento. Seja documentando eventos corporativos importantes ou criando retratos que capturam a verdadeira personalidade de cada pessoa.
+                    Como fotógrafo profissional há mais de uma década, dedico-me a registrar não apenas imagens, mas histórias e emoções. Cada foto deste evento foi feita com cuidado para preservar a autenticidade dos momentos e a conexão entre as empreendedoras participantes.
                   </p>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -195,6 +195,37 @@ const CafeDeNegociosGallery = () => {
         </div>
       </section>
 
+      {/* Gallery Intro Section */}
+      <section className="py-16 bg-gradient-to-br from-background to-coffee-50 relative z-10">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <div className="inline-block mb-4 px-6 py-2 bg-coffee-100 text-coffee-800 rounded-full font-medium">
+              Entrega Exclusiva
+            </div>
+            
+            <h2 className="text-4xl md:text-5xl font-bold text-coffee-900 font-sans">
+              Registros especiais para o
+              <span className="block text-transparent bg-gradient-to-r from-coffee-600 to-rose-600 bg-clip-text">
+                Café de Negócios
+              </span>
+            </h2>
+            
+            <p className="text-lg md:text-xl text-coffee-700 leading-relaxed font-light mb-8">
+              É com grande satisfação que eu, Eduardo Mendes, entrego esta coleção de imagens que capturei durante nosso encontro. Cada fotografia foi selecionada com cuidado para preservar a essência deste momento especial.
+            </p>
+            
+            <div className="flex items-center justify-center gap-4">
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-rose-400 to-rose-500 shadow-lg flex items-center justify-center">
+                <Camera className="w-6 h-6 text-white" />
+              </div>
+              <p className="text-lg font-medium text-coffee-800">
+                Duh Mendes Photography
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section className="py-20 bg-gradient-to-br from-background to-coffee-50 relative z-10">
         <div className="container mx-auto px-6">
@@ -202,7 +233,7 @@ const CafeDeNegociosGallery = () => {
             <h3 className="text-sm font-semibold text-coffee-600 uppercase tracking-wider">
               Galeria de Fotos
             </h3>
-            <h2 className="text-4xl md:text-5xl font-bold text-coffee-900">
+            <h2 className="text-4xl md:text-5xl font-bold text-coffee-900 font-sans">
               Momentos especiais do
               <span className="block text-transparent bg-gradient-to-r from-coffee-600 to-rose-600 bg-clip-text">
                 Café de Negócios
@@ -271,7 +302,7 @@ const CafeDeNegociosGallery = () => {
       <section className="py-20 bg-gradient-to-br from-rose-50 to-coffee-50 relative z-10">
         <div className="container mx-auto px-6">
           <div className="text-center space-y-8 animate-fade-in">
-            <h3 className="text-4xl md:text-5xl font-bold text-coffee-900">
+            <h3 className="text-4xl md:text-5xl font-bold text-coffee-900 font-sans">
               Compartilhe esse momento
             </h3>
             <p className="text-xl text-coffee-700 max-w-3xl mx-auto leading-relaxed">
@@ -293,7 +324,7 @@ const CafeDeNegociosGallery = () => {
                 onClick={() => window.open('https://duhmendes.com.br', '_blank')}
               >
                 <Camera className="w-5 h-5 mr-2" />
-                Visite nosso site
+                Visite meu site
               </Button>
             </div>
           </div>
@@ -304,7 +335,7 @@ const CafeDeNegociosGallery = () => {
       <footer className="py-16 bg-coffee-900 text-white relative z-10">
         <div className="container mx-auto px-6">
           <div className="text-center space-y-12">
-            <h4 className="text-3xl font-bold mb-8">
+            <h4 className="text-3xl font-bold mb-8 font-sans">
               Conheça nossas empreendedoras
             </h4>
             
@@ -315,7 +346,7 @@ const CafeDeNegociosGallery = () => {
                   <div className="w-16 h-16 rounded-full coffee-gradient mx-auto flex items-center justify-center shadow-lg">
                     <Coffee className="w-8 h-8 text-white" />
                   </div>
-                  <h5 className="text-xl font-semibold">Café de Negócios</h5>
+                  <h5 className="text-xl font-semibold font-sans">Café de Negócios</h5>
                   <p className="text-coffee-200">Projeto oficial</p>
                   <Button 
                     variant="outline" 
@@ -335,7 +366,7 @@ const CafeDeNegociosGallery = () => {
                   <div className="w-16 h-16 rounded-full rose-gradient mx-auto flex items-center justify-center shadow-lg">
                     <span className="text-white font-bold text-lg">MM</span>
                   </div>
-                  <h5 className="text-xl font-semibold">Maria Maciel</h5>
+                  <h5 className="text-xl font-semibold font-sans">Maria Maciel</h5>
                   <p className="text-coffee-200">Consultoria e Desenvolvimento</p>
                   <Button 
                     variant="outline" 
@@ -355,7 +386,7 @@ const CafeDeNegociosGallery = () => {
                   <div className="w-16 h-16 rounded-full rose-gradient mx-auto flex items-center justify-center shadow-lg">
                     <span className="text-white font-bold text-lg">DM</span>
                   </div>
-                  <h5 className="text-xl font-semibold">Dra. Maiara Medeiros</h5>
+                  <h5 className="text-xl font-semibold font-sans">Dra. Maiara Medeiros</h5>
                   <p className="text-coffee-200">Empreendedora e Mentora</p>
                   <Button 
                     variant="outline" 
@@ -373,7 +404,7 @@ const CafeDeNegociosGallery = () => {
             <div className="pt-8 border-t border-white/20">
               <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                 <p className="text-coffee-200">
-                  &copy; 2024 Café de Negócios. Feito com 💜 para empoderar mulheres empreendedoras.
+                  &copy; 2024 Café de Negócios. Fotos por Duh Mendes.
                 </p>
                 <p className="text-coffee-200">
                   Fotografias por <a href="https://duhmendes.com.br" target="_blank" rel="noopener noreferrer" className="text-rose-300 hover:text-rose-200 transition-colors font-semibold">duhmendes.com.br</a>
