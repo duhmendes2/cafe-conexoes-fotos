@@ -357,7 +357,7 @@ const CafeDeNegociosGallery = () => {
                     variant="outline" 
                     size="sm"
                     onClick={() => window.open('https://www.instagram.com/cafedenegociosmm/', '_blank')}
-                    className="w-full border-white/30 text-white hover:bg-white/20"
+                    className="w-full bg-white text-coffee-900 hover:bg-gray-100 font-semibold transition-all duration-300 rounded-md"
                   >
                     <Instagram className="w-4 h-4 mr-1" />
                     Seguir
@@ -377,7 +377,7 @@ const CafeDeNegociosGallery = () => {
                     variant="outline" 
                     size="sm"
                     onClick={() => window.open('https://www.instagram.com/mr.consultoriaedesenvolvimento/', '_blank')}
-                    className="w-full border-white/30 text-white hover:bg-white/20"
+                    className="w-full bg-white text-coffee-900 hover:bg-gray-100 font-semibold transition-all duration-300 rounded-md"
                   >
                     <Instagram className="w-4 h-4 mr-1" />
                     Seguir
@@ -397,7 +397,7 @@ const CafeDeNegociosGallery = () => {
                     variant="outline" 
                     size="sm"
                     onClick={() => window.open('https://www.instagram.com/dra.maiaradumedeiros/', '_blank')}
-                    className="w-full border-white/30 text-white hover:bg-white/20"
+                    className="w-full bg-white text-coffee-900 hover:bg-gray-100 font-semibold transition-all duration-300 rounded-md"
                   >
                     <Instagram className="w-4 h-4 mr-1" />
                     Seguir
