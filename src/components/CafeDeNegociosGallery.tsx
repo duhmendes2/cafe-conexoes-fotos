@@ -28,23 +28,31 @@ const CafeDeNegociosGallery = () => {
       [index]: !prev[index]
     }));
   };
-
-  const downloadImage = async (url: string, index: number) => {
-    try {
-      const response = await fetch(url);
-      const blob = await response.blob();
-      const downloadUrl = window.URL.createObjectURL(blob);
-      const link = document.createElement('a');
-      link.href = downloadUrl;
-      link.download = `cafe-de-negocios-${index + 1}.jpg`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      window.URL.revokeObjectURL(downloadUrl);
-    } catch (error) {
-      console.error('Erro ao fazer download:', error);
-    }
-  };
+const downloadImage = (url: string) => {
+  const link = document.createElement('a');
+  link.href = url;
+  link.setAttribute('download', '');
+  link.setAttribute('target', '_blank'); // força em novo tab caso precise
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+ // const downloadImage = async (url: string, index: number) => {
+   //  try {
+   //    const response = await fetch(url);
+   //    const blob = await response.blob();
+    //   const downloadUrl = window.URL.createObjectURL(blob);
+   //    const link = document.createElement('a');
+   //    link.href = downloadUrl;
+   //    link.download = `cafe-de-negocios-${index + 1}.jpg`;
+    //   document.body.appendChild(link);
+    //   link.click();
+    //   document.body.removeChild(link);
+    //   window.URL.revokeObjectURL(downloadUrl);
+   //  } catch (error) {
+   //    console.error('Erro ao fazer download:', error);
+ //    }
+//   };
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
