@@ -14,6 +14,11 @@ const photos = [
   'https://duhmendes.com.br/uploaduh/cafedenegociosmm/20250610/cafedenegocios_gravacao-3010.jpg',
 ];
 
+// Move the FloatingCoffeeBean component outside the main component
+const FloatingCoffeeBean = ({ className = '' }: { className?: string }) => (
+  <div className={`absolute w-3 h-4 bg-coffee-600 rounded-full opacity-20 animate-float ${className}`} />
+);
+
 const CafeDeNegociosGallery = () => {
   const [likes, setLikes] = useState<Record<number, boolean>>({});
 
@@ -40,10 +45,6 @@ const CafeDeNegociosGallery = () => {
       console.error('Erro ao fazer download:', error);
     }
   };
-
-  const FloatingCoffeeBean = ({ className = '' }: { className?: string }) => (
-    <div className={`absolute w-3 h-4 bg-coffee-600 rounded-full opacity-20 animate-float ${className}`} />
-  );
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -85,7 +86,7 @@ const CafeDeNegociosGallery = () => {
       <section className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-black text-white relative overflow-hidden">
         {/* Artistic Background Elements */}
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.02\"%3E%3Ccircle cx=\"30\" cy=\"30\" r=\"1\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.02%22%3E%3Ccircle cx=%2230%22 cy=%2230%22 r=%221%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
           <div className="absolute -top-20 -left-20 w-96 h-96 rounded-full bg-gradient-to-br from-rose-500/10 to-transparent blur-3xl"></div>
           <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-gradient-to-br from-amber-500/10 to-transparent blur-3xl"></div>
         </div>
